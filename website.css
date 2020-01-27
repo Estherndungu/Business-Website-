@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;     
+}
+
+.Home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.Home h1 {
+  position: absolute;
+  margin-left: 3em;
+  top: 30%;
+  left: 15%;
+  color: #FFF;
+  font-size: 3em;
+  font-weight: lighter;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.Home p {
+  position: absolute;
+  margin-left: 1em;
+  top: 38%;
+  left: 25%;
+  color: #ccc;
+  font-weight: lighter;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.menu {
+  position: absolute;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  color:#111;
+  font-size: 1.5em;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:#2c3e50;
+}
+
+.background::after {
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 120%;
+  height: 30%;
+  background: #FFF;
+  transform: rotate(-13deg);
+  
+  content: "";
+}
+
+.background::before {
+  position: absolute;
+  bottom: -11%;
+  left: -55%;
+  width: 120%;
+  height: 30%;
+  background: #FFF;
+  transform: rotate(13deg);
+  
+  content: "";
+}
+
+.nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow-y: hidden;
+  background: #2c3e50;
+  transition: 0.3s;
+  z-index: 3;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-menu a {
+  padding: 0.3em;
+  color: #FFF;
+  font-size: 2em;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+.clsLink {
+  margin-top: 1em;
+}
